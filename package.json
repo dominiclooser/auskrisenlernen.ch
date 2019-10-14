@@ -1,0 +1,28 @@
+{
+  "devDependencies": {
+    "autoprefixer": "latest",
+    "grunt": "latest",
+    "grunt-contrib-coffee": "1.*",
+    "grunt-contrib-copy": "latest",
+    "grunt-contrib-stylus": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-exec": "latest",
+    "grunt-force": "latest",
+    "grunt-gh-pages": "latest",
+    "grunt-postcss": "latest",
+    "grunt-responsive-images": "latest",
+    "grunt-yaml": "latest",
+    "jit-grunt": "latest",
+    "matchdep": "latest",
+    "postcss-calc": "latest",
+    "postcss-css-variables": "latest",
+    "time-grunt": "latest"
+  },
+  "dependencies": {
+    "glob": "^7.1.4",
+    "grunt-contrib-pug": "^2.0.0",
+    "live-server": "^1.2.1",
+    "replace-ext": "^1.0.0",
+    "toml": "^3.0.0"
+  }
+}

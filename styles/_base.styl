@@ -1,0 +1,68 @@
+article, aside, details, figcaption, figure
+footer, header, hgroup, main, nav, section, summary
+    display: block
+
+audio, canvas, progress, video
+    display: inline-block
+    vertical-align: baseline
+
+audio:not([controls])
+    display: none
+    height: 0
+
+[hidden], template
+    display: none
+
+a
+    background-color: transparent
+    text-decoration: none
+    color: inherit
+    
+a:active, a:hover
+    outline: 0
+    
+button, select
+    text-transform: none
+
+body, h1, h2, h3, h4, p, ul, figure
+    margin: 0
+    padding: 0
+    
+p
+    -webkit-margin-before:0 
+    -webkit-margin-after:0
+    
+ul
+    -webkit-margin-before: 0
+    -webkit-margin-after: 0
+    -webkit-padding-start: 0
+    list-style: none
+
+h1, h2, h3, h4
+    font-size: inherit
+    font-weight: inherit
+
+html 
+    box-sizing: border-box
+    background-color: background-color
+    height: 100%
+
+*, *:before, *:after 
+    box-sizing: inherit
+
+img, video
+    max-width: 100%
+    max-height: 100%
+
+canvas, img
+    vertical-align: middle
+  
+body
+    color: text-color
+    font-size: var(--m)
+    font-family: body-font
+    line-height: var(--line-height)
+    text-rendering: geometricPrecision
+
+p
+    hyphens: auto

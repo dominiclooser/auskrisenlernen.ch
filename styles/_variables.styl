@@ -1,0 +1,53 @@
+// breakpoints
+text-plus = '(min-width: 980px)'
+big-text = '(min-width: 40em)'
+
+// typography
+body-font = Georgia
+heading-font = Helvetica
+heading-line-height = 1.3
+max-text-width = 47rem
+
+// colors
+primary-color =  #DB222A
+secondary-color = blue
+dark = rgba(0,0,0,0.87)
+light-grey = #f7f7f7
+middle-grey = #e8e6e6
+text-color = dark
+link-color = primary-color
+background-color = #fefefe
+soft-border-color = grey
+
+// misc
+default-border-width = 1px
+default-border-style = solid
+min-column-width = 15em
+max-page-width = max-text-width
+
+:root
+    --line-height: 1.6
+    --scale-factor: 1.333
+    --font-size: 18px
+    @media big-text
+        --font-size: 22px
+    --unit: calc(var(--line-height)*var(--font-size))
+    --semi-unit: calc(0.5*var(--unit))
+    --quarter-unit: calc(0.25*var(--unit))
+    --two-units: calc(2*var(--unit))
+    --three-units: calc(3*var(--unit))
+    --four-units: calc(4*var(--unit))
+    --five-units: calc(5*var(--unit))
+    --m: var(--font-size)
+    --s: calc(var(--m) / var(--scale-factor))
+    --xs: calc(var(--s) / var(--scale-factor))
+    --l: calc(var(--scale-factor) * var(--m))
+    --xl: calc(var(--scale-factor) * var(--l))
+    --xxl: calc(var(--scale-factor) * var(--xl))
+    --xxxl: calc(var(--scale-factor) * var(--xxl))
+    --xxxxl: calc(var(--scale-factor) * var(--xxxl))
+    --xxxxxl: calc(var(--scale-factor) * var(--xxxxl))
+    --gutter: var(--unit)
+    --semi-gutter: calc(0.5*var(--gutter))
+    --page-padding: var(--unit)
+    --page-header-margin: var(--two-units) 0 var(--unit) 0

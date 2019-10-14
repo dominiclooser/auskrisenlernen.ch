@@ -1,0 +1,42 @@
+#attention
+    border: 2px solid #ef6f6c
+    padding: var(--semi-unit)
+
+#news
+    border: 2px solid #56e39f
+    padding: var(--semi-unit)
+
+.subtitle
+    font-size: var(--m)
+    display: block
+    font-style: italic
+    text-transform: none
+
+#intro
+    margin-top: var(--two-units)
+    padding: var(--semi-unit) 0
+    border-top: 1px solid dark
+    border-bottom: @border-top
+    section
+        display: flex
+        h2
+            font-family: heading-font
+            text-transform: uppercase
+            width: var(--three-units)
+            margin-right: var(--unit)
+            font-size: var(--l)
+
+    section+section
+        margin-top: var(--unit)
+
+#dates-list
+    stacked-list(border: 1px solid grey)
+
+#people-list
+    stacked-list(border: 1px solid grey)
+
+body
+    padding-bottom: var(--two-units)
+
+p+ul
+    margin-top: var(--unit)
