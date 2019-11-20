@@ -1,0 +1,178 @@
+////////////
+// layout //
+////////////
+
+.center-wrapper
+    margin: 0 auto
+    padding-left: var(--page-padding)
+    padding-right: @padding-left
+    max-width: max-page-width
+
+.fullwidth-wrapper
+    padding: 0 var(--unit)
+    @media l
+        padding: 0 var(--four-units)
+
+.text-wrapper
+    max-width: max-text-width
+
+grid(min-column-width=100px, gap=var(--unit))
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(min-column-width, 1fr ))
+    grid-column-gap: gap
+    grid-row-gap: gap
+
+
+//////////
+// text // 
+//////////
+
+.spaced-paragraphs 
+    p+p
+        margin-top: var(--semi-unit) 
+
+.indented-paragraphs 
+    p+p
+        text-indent: var(--unit)
+
+.textplus
+    @media textplus
+        display: flex
+
+.textplus-text
+    margin: var(--unit) 0 0 0
+    @media text-plus
+        margin: 0 var(--gutter) 0 0
+
+.textplus-plus
+    align-self: left
+
+.plustext
+    @media text-plus
+        display: flex
+
+.plustext-text
+    margin: var(--unit) 0 0 0
+    @media text-plus
+        margin: 0 0 0 var(--gutter)
+
+.plustext-plus
+    align-self: left
+
+
+///////////
+// links //
+///////////
+
+.arrow
+    &::before
+        content: '\2192'
+        margin-right: 0.3em
+        display: inline-block
+        
+.arrow-links a
+    @extends .arrow
+
+.color-links a
+    color: link-color
+
+.underlined
+    text-decoration: underline
+
+.underlined-links a
+    @extends .underlined
+
+.underline-on-hover
+    &:hover
+        text-decoration: underline
+
+.underline-on-hover-links a
+    @extends .underline-on-hover
+
+.color-on-hover-links 
+    a:hover
+        color: link-color
+
+
+///////////
+// lists //
+///////////
+
+.default-list
+    list-style-type: disc
+    list-style-position: inside
+    li + li
+        margin-top: var(--semi-unit)
+
+.arrow-list
+    list-style: none
+    li
+        display: flex
+    li:before
+        content: '\2192 \a0'        
+
+stacked-list(spacing = var(--semi-unit), border = 1px dotted dark)
+    list-style: none
+    padding: 0
+    li  
+        padding: spacing 0 
+        border-bottom: border
+        &:first-child
+            border-top: border
+
+hlist(sep = '', spacing-left = 0.5em, spacing-right = 0.5em)
+    list-style: none
+    margin: 0
+    li 
+        display: inline
+    li:not(:last-child)
+        &::after
+            margin-left: spacing-left
+            margin-right: spacing-right
+            content: sep
+    li:not(:first-child)
+        margin-left: spacing-left
+
+.comma-list
+    hlist(', ', 0, 0)
+
+highlight-list(background = dark, color = white)
+    li:hover
+        background: background
+        color: color
+        cursor: pointer
+    a:hover
+        color: inherit
+    a
+        text-decoration: none
+
+.default-dl
+    dt
+        line-height: 1.5
+        display: inline
+        font-weight: bold
+        &::after
+            content: ': '
+    dd
+        display: inline
+        &::after
+            content: '\A'
+            white-space: pre
+
+
+//////////
+// misc //
+//////////
+
+.video-wrapper
+    position: relative
+    padding-bottom: 50% //56.25%
+    padding-top: 25px
+    height: 0
+    iframe
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+

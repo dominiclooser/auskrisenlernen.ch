@@ -2,7 +2,6 @@
   "devDependencies": {
     "autoprefixer": "latest",
     "grunt": "latest",
-    "grunt-contrib-coffee": "1.*",
     "grunt-contrib-copy": "latest",
     "grunt-contrib-stylus": "latest",
     "grunt-contrib-watch": "latest",
@@ -20,9 +19,17 @@
   },
   "dependencies": {
     "glob": "^7.1.4",
+    "gray-matter": "^4.0.2",
+    "grunt-contrib-coffee": "^2.1.0",
     "grunt-contrib-pug": "^2.0.0",
+    "jstransformer-markdown-it": "^2.1.0",
     "live-server": "^1.2.1",
+    "lodash": "^4.17.15",
+    "marked": "^0.7.0",
     "replace-ext": "^1.0.0",
-    "toml": "^3.0.0"
+    "rimraf": "^3.0.0",
+    "showdown": "^1.9.0",
+    "toml": "^3.0.0",
+    "yaml": "^1.7.0"
   }
 }
