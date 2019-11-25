@@ -1,4 +1,4 @@
-////////////
+    ////////////
 // layout //
 ////////////
 
@@ -10,17 +10,41 @@
 
 .fullwidth-wrapper
     padding: 0 var(--unit)
-    @media l
-        padding: 0 var(--four-units)
 
 .text-wrapper
     max-width: max-text-width
 
-grid(min-column-width=100px, gap=var(--unit))
+grid(min-column-width = 100px, gap = var(--unit))
     display: grid
     grid-template-columns: repeat(auto-fit, minmax(min-column-width, 1fr ))
     grid-column-gap: gap
     grid-row-gap: gap
+
+.textplus
+    @media textplus
+        display: flex
+
+.textplus-text
+    max-width: max-text-width
+    margin: var(--unit) 0 0 0
+    @media textplus
+        margin: 0 var(--unit) 0 0
+
+.textplus-plus
+    align-self: left
+
+.plustext
+    @media textplus
+        display: flex
+
+.plustext-text
+    max-width: max-text-width
+    margin: var(--unit) 0 0 0
+    @media textplus
+        margin: 0 0 0 var(--unit)
+
+.plustext-plus
+    align-self: left
 
 
 //////////
@@ -34,31 +58,6 @@ grid(min-column-width=100px, gap=var(--unit))
 .indented-paragraphs 
     p+p
         text-indent: var(--unit)
-
-.textplus
-    @media textplus
-        display: flex
-
-.textplus-text
-    margin: var(--unit) 0 0 0
-    @media text-plus
-        margin: 0 var(--gutter) 0 0
-
-.textplus-plus
-    align-self: left
-
-.plustext
-    @media text-plus
-        display: flex
-
-.plustext-text
-    margin: var(--unit) 0 0 0
-    @media text-plus
-        margin: 0 0 0 var(--gutter)
-
-.plustext-plus
-    align-self: left
-
 
 ///////////
 // links //
@@ -146,18 +145,34 @@ highlight-list(background = dark, color = white)
     a
         text-decoration: none
 
-.default-dl
-    dt
-        line-height: 1.5
-        display: inline
+striped-list(color)
+    li
+        padding: var(--semi-unit)
+    li:nth-child(2n+1)
+        background-color: color
+
+default-dl(row-gap = var(--semi-unit))
+    display: grid
+    grid-template-columns: min-content auto
+    grid-row-gap: row-gap
+    grid-column-gap: var(--unit)
+    dt  
         font-weight: bold
-        &::after
-            content: ': '
     dd
-        display: inline
-        &::after
-            content: '\A'
-            white-space: pre
+        ul
+            line-height: 1.5
+        li::before
+            content: '–'
+            margin-right: 0.5em
+    //     display: inline
+    //     
+    //     &::after
+    //         content: ': '
+    // dd
+    //     display: inline
+    //     &::after
+    //         content: '\A'
+    //         white-space: pre
 
 
 //////////

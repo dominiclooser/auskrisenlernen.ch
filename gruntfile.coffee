@@ -74,7 +74,7 @@ config =
                 sizes: [{rename: false, width: 400}]
             files: [
                     expand: true
-                    cwd: 'dynamic/images/uploads'
+                    cwd: 'dynamic/images'
                     src: '**/*.{jpg, png}'
                     dest: 'out/images/s'
             ]
@@ -83,7 +83,7 @@ config =
                 sizes: [{rename: false, width: 1000}]
             files: [
                     expand: true
-                    cwd: 'dynamic/images/uploads'
+                    cwd: 'dynamic/images'
                     src: '**/*.{jpg, png}'
                     dest: 'out/images/m'
             ]

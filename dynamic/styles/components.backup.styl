@@ -2,80 +2,107 @@
 // layout //
 ////////////
 
-.wrapper
+.center-wrapper
     margin: 0 auto
     padding-left: var(--page-padding)
     padding-right: @padding-left
     max-width: max-page-width
 
+.fullwidth-wrapper
+    padding: 0 var(--unit)
+    @media l
+        padding: 0 var(--four-units)
+
 .text-wrapper
     max-width: max-text-width
 
-.grid
+grid(min-column-width=100px, gap=var(--unit))
     display: grid
     grid-template-columns: repeat(auto-fit, minmax(min-column-width, 1fr ))
-    grid-column-gap: var(--unit)
-    grid-row-gap: var(--unit)
+    grid-column-gap: gap
+    grid-row-gap: gap
 
-.card
-    padding: var(--unit) var(--semi-unit)
-    background: light-background-color
-    img + p
-        margin-top: var(--unit)
 
-.card-section + .card-section
-    margin-top: var(--unit)
+//////////
+// text // 
+//////////
 
-.card-title
-    margin-bottom: var(--semi-unit)
+.spaced-paragraphs 
+    p+p
+        margin-top: var(--semi-unit) 
 
-.text-plus
-    @media text-plus
+.indented-paragraphs 
+    p+p
+        text-indent: var(--unit)
+
+.textplus
+    @media textplus
         display: flex
 
-.text-plus-text
+.textplus-text
     margin: var(--unit) 0 0 0
     @media text-plus
         margin: 0 var(--gutter) 0 0
 
-.text-plus-plus
+.textplus-plus
     align-self: left
 
-.plus-text
+.plustext
     @media text-plus
         display: flex
 
-.plus-text-text
+.plustext-text
     margin: var(--unit) 0 0 0
     @media text-plus
         margin: 0 0 0 var(--gutter)
 
-.plus-text-plus
+.plustext-plus
     align-self: left
 
-// text    
 
-.spaced-paragraphs
-    p+p
-        margin-top: var(--semi-unit) 
+///////////
+// links //
+///////////
 
-.indented-paragraphs
-    p+p
-        text-indent: var(--unit)
-
-.colored-links
-    a
-        color: link-color
-        &:hover
-            text-decoration: underline
+.arrow
+    &::before
+        content: '\2192'
+        margin-right: 0.3em
+        display: inline-block
         
-.underlined-links
-    a
-        text-decoration: underline
-        &:hover
-            color: primary-color
+.arrow-links a
+    @extends .arrow
 
-// lists
+.color-links a
+    color: link-color
+
+.underlined
+    text-decoration: underline
+
+.underlined-links a
+    @extends .underlined
+
+.underline-on-hover
+    &:hover
+        text-decoration: underline
+
+.underline-on-hover-links a
+    @extends .underline-on-hover
+
+.color-on-hover-links 
+    a:hover
+        color: link-color
+
+
+///////////
+// lists //
+///////////
+
+.default-list
+    list-style-type: disc
+    list-style-position: inside
+    li + li
+        margin-top: var(--semi-unit)
 
 .arrow-list
     list-style: none
@@ -93,18 +120,21 @@ stacked-list(spacing = var(--semi-unit), border = 1px dotted dark)
         &:first-child
             border-top: border
 
-separated-list(separator = '', spacing-left = 0.5em, spacing-right = 0.5em)
+hlist(sep = '', spacing-left = 0.5em, spacing-right = 0.5em)
     list-style: none
     margin: 0
     li 
         display: inline
     li:not(:last-child)
-        ::after
+        &::after
             margin-left: spacing-left
             margin-right: spacing-right
-            content: separator
+            content: sep
     li:not(:first-child)
-        margin-left: spacing
+        margin-left: spacing-left
+
+.comma-list
+    hlist(', ', 0, 0)
 
 highlight-list(background = dark, color = white)
     li:hover
@@ -116,21 +146,33 @@ highlight-list(background = dark, color = white)
     a
         text-decoration: none
 
-.default-definition-list
+.default-dl
     dt
+        line-height: 1.5
         display: inline
         font-weight: bold
         &::after
-            content: ':'
-
+            content: ': '
     dd
         display: inline
-        margin-left:var(--unit) 
-        width: 100%
         &::after
             content: '\A'
             white-space: pre
 
 
-// misc
+//////////
+// misc //
+//////////
+
+.video-wrapper
+    position: relative
+    padding-bottom: 50% //56.25%
+    padding-top: 25px
+    height: 0
+    iframe
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
 
