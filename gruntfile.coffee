@@ -170,6 +170,7 @@ module.exports = (grunt) ->
         globalOptions =
             basedir: 'dynamic/shared'
             base: (path) -> parse(path).base
+            fs: fs
         
         if fs.existsSync(CONFIG_PATH)
             
