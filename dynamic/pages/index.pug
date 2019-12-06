@@ -13,17 +13,17 @@ block content
             for entry in nav
                li: a(href=entry.link)= entry.title
 
-      section#intro.s1
-         p Jeder 2. Donnerstag des Monats   
-         p <time>19–21&nbsp;Uhr</time> • Alte Kaserne Winterthur
+      section#intro.s1.spaced-paragraphs.underlined-links
+         p Im <em>Recovery Trialog Winterthur</em> tauschen sich Angehörige, Krisenerfahrene und Fachpersonen gleichberechtigt darüber aus, wie Genesung (Recovery) auch in einem Leben mit psychischen Erschütterungen gelingen kann.
+         p. 
+            Jeder 2. Donnerstag des Monats <br>   
+            <time>19–21&nbsp;Uhr</time> • <a href='#ort'>Alte Kaserne Winterthur</a>
       
-      section.s1
+      section.s1.spaced-paragraphs
          p.
-            Wie findet man in der Krise wieder zur Hoffnung zurück? Wie kann man auch mit schwierigsten Gefühlen und
-            Gedanken einen Umgang finden? Was hilft, um mit Vorurteilen und Ängsten des Umfelds zurechtzukommen? Wie
-            können Angehörige Anteil nehmen und gleichzeitig auf ihre eigene Energie achten? Und was können
-            Fachpersonen aus den Erfahrungen Betroffener und deren Angehörigen lernen?
-            Diesen und anderen Fragen wollen wir an 12 Abenden mit jeweils einem Schwerpunkt-Thema nachgehen.
+            Wie findet man in Krisen wieder Zuversicht? Wie lässt sich mit schwierigsten Gedanken und Gefühlen ein Umgang finden? Was hilft, um mit Vorurteilen und Ängsten des Umfelds klar zu kommen? Wie geht es den Angehörigen dabei, wo sind ihre Grenzen und Möglichkeiten? Welche Erfahrungen berühren Fachpersonen und wie gehen sie mit Krisen (der anderen oder auch eigenen) um? Was können wir alle voneinander lernen?
+         p.   
+            Diesen und anderen Fragen wollen wir an 12 Abenden mit jeweils einem Schwerpunkt-Thema nachgehen. 
       
       section#termine.s1
          header.s1-header
@@ -31,8 +31,8 @@ block content
          .s1-main
             ul#meetings
                for meeting in meetings
-                  - date = new Date(meeting.date)
-                  time.meeting-date= date.toLocaleDateString('de-DE')
+                  - moment.locale('de')
+                  time.meeting-date= moment(meeting.date).format('dd Do MMM YYYY')
                   h3.meeting-title= meeting.title  
 
       section#ablauf.s1.spaced-paragraphs
@@ -74,7 +74,9 @@ block content
          header.s1-header
             h2.h2 Kontakt
          .s1-main
-            p <a href='mailto:info@auskrisenlernen.ch'>info@auskrisenlernen.ch</a> oder 079 377 42 80
+            p. 
+               <a href='mailto:info@auskrisenlernen.ch'>info@auskrisenlernen.ch</a>
+                oder <span class='nobr'>079 377 42 80</span>
 
    footer.page-footer
       .center-wrapper.text-wrapper
@@ -83,6 +85,8 @@ block content
          main.s1-main.logos
             for name in fs.readdirSync('static/images/logos')
                img(src='/images/logos/' + name)
+
+
 
 //- section#intro.s1
          //-    section

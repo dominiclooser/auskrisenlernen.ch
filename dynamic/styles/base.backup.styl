@@ -42,27 +42,43 @@ h1, h2, h3, h4
     font-size: inherit
     font-weight: inherit
 
-html 
-    box-sizing: border-box
-    background-color: background-color
-    height: 100%
-
 *, *:before, *:after 
-    box-sizing: inherit
+    box-sizing: border-box
 
-img, video
+img, video, iframe
     max-width: 100%
     max-height: 100%
+
+dd
+    margin-inline-start: 0
 
 canvas, img
     vertical-align: middle
   
+button
+    border: none
+    margin: 0
+    padding: 0
+    width: auto
+    overflow: visible
+    background: transparent
+    /* inherit font & color from ancestor */
+    color: inherit
+    font: inherit
+    /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+    line-height: normal
+    /* Corrects font smoothing for webkit */
+    -webkit-font-smoothing: inherit
+    -moz-osx-font-smoothing: inherit
+    /* Corrects inability to style clickable `input` types in iOS */
+    -webkit-appearance: none
+    outline: none;
+
 body
+    background: background
+    min-height: 100vh
     color: text-color
     font-size: var(--m)
     font-family: body-font
     line-height: var(--line-height)
     text-rendering: geometricPrecision
-
-p
-    hyphens: auto

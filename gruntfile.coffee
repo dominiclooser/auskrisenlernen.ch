@@ -14,6 +14,7 @@ yaml = require 'yaml'
 matter = require 'gray-matter'
 rimraf = require 'rimraf'
 marked = require 'marked'
+moment = require 'moment'
 
 DATA_DIR = 'data'
 OUT_DIR = 'out'
@@ -171,6 +172,7 @@ module.exports = (grunt) ->
             basedir: 'dynamic/shared'
             base: (path) -> parse(path).base
             fs: fs
+            moment: moment
         
         if fs.existsSync(CONFIG_PATH)
             
