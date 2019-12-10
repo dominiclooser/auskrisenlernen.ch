@@ -91,7 +91,7 @@ config =
     'gh-pages':
         production:
             options:
-                base: 'www'
+                base: 'out'
             src: '**/*'
         stage:
             options:
@@ -219,5 +219,5 @@ module.exports = (grunt) ->
 
     grunt.registerTask 'build', ['pug', 'stylus', 'coffee', 'copy:static', 'strip-extensions']
     grunt.registerTask 'default', ['clean', 'make-dirs', 'build', 'watch']
-    grunt.registerTask 'deploy', ['clean-build','copy:production', 'gh-pages:production']
-    grunt.registerTask 'stage', ['clean-build','copy:stage', 'gh-pages:stage']
+    grunt.registerTask 'deploy', ['clean', 'make-dirs', 'build', 'gh-pages:production']
+    # grunt.registerTask 'stage', ['clean-build','copy:stage', 'gh-pages:stage']
