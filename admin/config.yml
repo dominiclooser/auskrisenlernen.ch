@@ -1,0 +1,17 @@
+backend:
+   name: git-gateway
+   branch: master
+
+media_folder: uploads
+
+collections:
+   -  label: Texte
+      name: texts
+      folder: 'data/texts'
+      delete: false
+      fields:
+         -  name: body
+            widget: markdown
+      
+   
+
