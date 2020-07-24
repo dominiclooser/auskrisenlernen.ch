@@ -1,8 +1,9 @@
 
 .alarm
-    border: 2px solid #ef6f6c
+    border: 2px solid currentColor
     padding: var(--semi-unit)
-    color: #ef6f6c
+    color: primary
+    hyphens: auto
 
 nav
     position: absolute
@@ -20,6 +21,24 @@ nav
 #attention
     border: 2px solid #ef6f6c
     padding: var(--semi-unit)
+
+.newsletter-section
+    // #mc_embed_signup_scroll
+    //     display: flex
+    input[type='email']
+        width: 66%
+        border: 1px solid grey
+        padding: var(--semi-unit)
+    input[type='submit']
+        margin-left: var(--quarter-unit)
+        padding: var(--semi-unit)
+        background: primary
+        color: white
+        border-radius: 0.2em
+        cursor: pointer
+        &:hover
+            text-decoration: underline
+            
 
 #news
     border: 2px solid #56e39f

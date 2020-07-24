@@ -47,15 +47,21 @@ h1, h2, h3, h4
 
 img, video, iframe
     max-width: 100%
-    max-height: 100%
 
 dd
     margin-inline-start: 0
 
 canvas, img
     vertical-align: middle
-  
+
+input 
+    -webkit-appearance: none
+    font-family: inherit
+    font-size: inherit
+    border: none
+
 button
+    cursor: pointer
     border: none
     margin: 0
     padding: 0
@@ -74,6 +80,12 @@ button
     -webkit-appearance: none
     outline: none;
 
+address
+    font-style: inherit
+
+blockquote
+    margin: 0
+
 body
     background-color: background-color
     min-height: 100vh
@@ -82,6 +94,3 @@ body
     font-family: body-font
     line-height: var(--line-height)
     text-rendering: geometricPrecision
-
-.nobr
-    white-space: nowrap

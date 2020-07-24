@@ -108,7 +108,7 @@ config =
     'gh-pages':
         production:
             options:
-                base: 'www'
+                base: 'out'
             src: '**/*'
         stage:
             options:
