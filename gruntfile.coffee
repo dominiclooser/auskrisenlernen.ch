@@ -16,6 +16,8 @@ matter = require 'gray-matter'
 rimraf = require 'rimraf'
 marked = require 'marked'
 moment = require 'moment-timezone'
+imageminMozjpeg = require 'imagemin-mozjpeg'
+imageminPngquant = require 'imagemin-pngquant'
 
 DATA_DIR = 'data'
 PROCESSED_DATA_DIR = '.temp/data'
@@ -56,6 +58,8 @@ getDataObject = (dir) ->
     data = {}
     
     for name in fs.readdirSync(dir)
+        if name == 'drafts'
+            continue
         dataPath = join(dir, name)
         id = replaceExt(name, '')
         id = id.split('-').join('_')
@@ -72,54 +76,71 @@ getDataObject = (dir) ->
     return data
    
 config =
-    exec:
-        process_data: 'dspg'
+
+    # exec:
+    #     encrypt:  'staticrypt out/articles/corona/index.html keinpasswort -o out/articles/corona/index.html'
+    #     encrypt2: 'staticrypt out/projects/percy/index.html percy -o out/projects/percy/index.html'
+    
+    imagemin:
+        main: 
+            options:
+                use: [imageminMozjpeg(), imageminPngquant()]
+            files: [
+                expand: true
+                cwd: 'dynamic/images'
+                src: '**/*.{png,jpg,gif}'
+                dest: '.temp/images'
+            ]
+
     responsive_images:
         options:
-            engine: 'im'
             newFilesOnly: true
+            # createNoScaledImage: true
         's':
             options:
                 sizes: [{rename: false, width: 400}]
             files: [
-                    expand: true
-                    cwd: 'dynamic/images'
-                    src: '**/*.{jpg,png,gif}'
-                    dest: 'out/images/s'
+                expand: true
+                cwd: '.temp/images'
+                src: '**/*.{jpg,png,gif}'
+                dest: 'out/images/s'
             ]
         'm':
             options:
                 sizes: [{rename: false, width: 1000}]
             files: [
-                    expand: true
-                    cwd: 'dynamic/images'
-                    src: '**/*.{jpg,png,gif}'
-                    dest: 'out/images/m'
+                expand: true
+                cwd: '.temp/images'
+                src: '**/*.{jpg,png,gif}'
+                dest: 'out/images/m'
             ]
         'l':
             options:
                 sizes: [{rename: false, width: 1500}]
             files: [
-                    expand: true
-                    cwd: 'dynamic/images'
-                    src: '**/*.{jpg,png,gif}'
-                    dest: 'out/images/l'
+                expand: true
+                cwd: '.temp/images'
+                src: '**/*.{jpg,png,gif}'
+                dest: 'out/images/l'
             ]
+
     'gh-pages':
         production:
             options:
-                base: 'out'
+                base: 'www'
             src: '**/*'
         stage:
             options:
                 base: 'www'
                 repo: 'git@github.com:dominiclooser/dominiclooser.ch-stage.git'
             src: '**/*'
+    
     postcss:
         options:
-            processors: [autoprefixer({browers: 'last 2 versions'}), cssVariables, calc]
+            processors: [autoprefixer, cssVariables, calc]
         main:
             src: 'out/styles/styles.css'
+    
     copy:
         static:
             cwd: 'static'
@@ -164,7 +185,7 @@ config =
             tasks: 'copy:static'
         images:
             files: 'dynamic/images/**/*'
-            tasks: 'responsive_images'
+            tasks: ['imagemin', 'responsive_images']
 
 module.exports = (grunt) ->
     grunt.initConfig config
@@ -228,6 +249,29 @@ module.exports = (grunt) ->
             else
                 return true
 
+        toWidth = (size) ->
+            if size == 's'
+                return 400
+            else if size == 'm'
+                return 1000
+            else if size == 'l'
+                return 1500
+            else
+                throw 'undefined image size'
+        
+        read = (filename) ->
+    
+            if fs.existsSync(filename)
+                return fs.readFileSync(filename)
+            else
+                return ''
+            # catch e
+            #     console.log('ERROR')
+            #     return ''
+                # if ex.code != 'ENOENT'
+                #     throw ex
+                # return Buffer.alloc(0)        
+
         globalOptions =
             basedir: 'dynamic/shared'
             base: (path) -> parse(path).base
@@ -236,6 +280,9 @@ module.exports = (grunt) ->
             getImages: getImages
             containsImages: containsImages
             marked: marked
+            toWidth: toWidth
+            plugins: [{read: read}]
+    
             
        
         if fs.existsSync(CONFIG_PATH)
@@ -272,7 +319,7 @@ module.exports = (grunt) ->
 
                     options = {}
                     _.merge(options, locals, globals, globalOptions)
-
+                    # console.log(options)
                     process.stdout.write("Rendering #{templatePath} with data from #{dataPath} ... ")
                     try
                         html = pug.render(templateContent, options)
@@ -290,14 +337,18 @@ module.exports = (grunt) ->
                     console.log("done. Generated #{targetFile}")
                
         for pagePath in glob.sync('dynamic/pages/**/*.pug')
+            relativePath = path.relative(PAGES_PATH, pagePath)
+            urlPath = replaceExt(relativePath, '')
+
             string = fs.readFileSync(pagePath)
             parsed = matter(string)
             
-            options = {}
+            options = 
+                path: urlPath
             locals = 
                 local: parsed.data
             _.merge(options, locals, globals, globalOptions)
-            
+
             pugString = parsed.content
             
             try
@@ -308,16 +359,16 @@ module.exports = (grunt) ->
                 console.error(e)
                 continue
 
-            relativePath = path.relative(PAGES_PATH, pagePath)
             relativeTarget = replaceExt(relativePath, '.html')
             target = join(OUT_DIR, relativeTarget)
             console.log("done. Writing to #{target}")
             fs.writeFileSync(target, html)
             
-            # base = path.parse(pagePath).base
-            
 
-    grunt.registerTask 'build', ['responsive_images', 'pug', 'stylus', 'coffee', 'copy:static', 'strip-extensions']
+    grunt.registerTask 'build', ['pug', 'stylus', 'postcss', 'coffee', 'copy:static', 'strip-extensions']
     grunt.registerTask 'default', ['build', 'watch']
+    
+    grunt.registerTask 'full_build', ['clean', 'make-dirs', 'imagemin', 'responsive_images', 'build'] 
+    
     grunt.registerTask 'deploy', ['clean', 'make-dirs', 'build', 'copy:production', 'gh-pages:production']
     grunt.registerTask 'stage', ['clean-build','copy:stage', 'gh-pages:stage']
