@@ -10,6 +10,7 @@ collections:
       folder: 'data/texts'
       delete: false
       fields:
+         -  name: title
          -  name: body
             widget: markdown
       

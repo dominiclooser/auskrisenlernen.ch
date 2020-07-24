@@ -1,3 +1,7 @@
+---
+title: Box
+---
+
 **Psychopharmaka – Fluch oder Segen?**
 
 Vielleicht sollen wir eher sagen: Fluch und Segen? Oder auch: in der instabilen Zeit ein Segen, aber danach ein Fluch? Umgekehrt ist es auch möglich: die Begegnung mit dem wiederkehrenden Erleben des Kontrollverlustes war ein Fluch, die Medikamente waren dann ein Segen. Und: Wie ist die Perspektive der Angehörigen und Fachpersonen dazu? 
