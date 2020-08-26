@@ -127,11 +127,11 @@ config =
     'gh-pages':
         production:
             options:
-                base: 'www'
+                base: 'out'
             src: '**/*'
         stage:
             options:
-                base: 'www'
+                base: 'out'
                 repo: 'git@github.com:dominiclooser/dominiclooser.ch-stage.git'
             src: '**/*'
     
