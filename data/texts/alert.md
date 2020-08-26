@@ -7,7 +7,7 @@ title: Box
 
 Hilft Arbeit, psychisch gesund zu bleiben? Oder ist der Stress verantwortlich dafür, dass die Zahl der Menschen, welche psychisch erkranken, scheinbar zunimmt? Wie sähe ein idealer Arbeitsplatz aus? Und welche Integrationsmassnahmen können dazu führen, dass eine Rückkehr in die Arbeitswelt wieder möglich ist?
 
-Mit diesen Fragen wollen wir uns am nächsten Trialog-Abend beschäftigen.
+Mit diesen Fragen wollen wir uns am nächsten Trialog-Abend beschäftigen..
 
 Die Besucherzahl ist auf Grund der aktuell geltenden Schutzkonzepte immer noch eingeschränkt (20 Personen) Deshalb ist für eine sichere Teilnahme eine Anmeldung (Mail an info@auskrisenlernen.ch) erforderlich.
 
