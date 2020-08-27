@@ -3,7 +3,7 @@ title: Box
 ---
 **Achtung: der Trialog-Abend vom 13.8. findet ausnahmsweise nicht in der Alten Kaserne statt, sondern in der Parkarena Winterthur, siehe unten.**
 
-**Macht Arbeit krank / gesund?**
+**Macht Arbeit krank / gesund?** 
 
 Hilft Arbeit, psychisch gesund zu bleiben? Oder ist der Stress verantwortlich dafür, dass die Zahl der Menschen, welche psychisch erkranken, scheinbar zunimmt? Wie sähe ein idealer Arbeitsplatz aus? Und welche Integrationsmassnahmen können dazu führen, dass eine Rückkehr in die Arbeitswelt wieder möglich ist?
 
