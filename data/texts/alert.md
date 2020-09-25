@@ -1,14 +1,14 @@
 ---
 title: Box
 ---
-**Selbstoptimierung ohne Grenzen?**
+**Zwang – zwischen Schutz und Selbstbestimmung**
 
-Mache ich genug Weiterbildungen? Bin ich schlank genug? Habe ich den perfekten Partner? Zeigt meine Instagram-Seite, wie toll mein Leben ist? Lebe ich denn auch achtsam / bewusst / nachhaltig / gesund / glücklich / zufrieden / ökologisch genug? Habe ich die richtige Anzahl Freundinnen? Glaube ich genug? Ist meine Nase nicht zu gross?
+Das Gefühl, zu etwas gezwungen zu werden, etwas gegen den freien Willen tun zu müssen, verletzt unsere Grundbedürfnisse nach Autonomie und Integrität. Zwangserleben ist beschämend.
 
-Bist du diesen oder ähnlichen Fragen auch schon mal begegnet? Dann bist du vermutlich nicht alleine - im Gegenteil: die Anforderungen, die wir an uns selber stellen können, scheinen ins Unendliche angewachsen zu sein. 
+In der psychiatrischen Behandlung wird Zwang eingesetzt um Fürsorge und Schutz zu gewährleisten. Das dies mit Mitteln der Gewalt geschieht, wird als einzige zur Verfügung stehende Möglichkeit wahrgenommen. 
 
-Was macht das mit uns und unserer psychischen Gesundheit?
+Am Recovery-Trialog vom 8. Oktober wollen wir aus der Perspektive von Angehörigen, Betroffenen und Fachpersonen folgenden Fragen nachgehen:
 
-Diesen Fragen wollen wir am Donnerstag, 10. September, 19 Uhr, nachgehen.
+Zwang als Mittel zu Schutz: Ist er wirklich nötig? Ginge es auch anders? Wie? Was bräuchte es dafür? Was wäre wichtig?
 
 Die Besucherzahl ist auf Grund der aktuell geltenden Schutzkonzepte immer noch eingeschränkt (16 Personen) Deshalb ist für eine sichere Teilnahme eine Anmeldung (Mail an info@auskrisenlernen.ch) erforderlich.
