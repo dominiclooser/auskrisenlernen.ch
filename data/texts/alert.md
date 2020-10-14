@@ -1,14 +1,10 @@
 ---
 title: Box
 ---
-**Zwang – zwischen Schutz und Selbstbestimmung**
+**Humor in der Krise!?**
 
-Das Gefühl, zu etwas gezwungen zu werden, etwas gegen den freien Willen tun zu müssen, verletzt unsere Grundbedürfnisse nach Autonomie und Integrität. Zwangserleben ist beschämend.
+Wer in einer psychischen Krise steckt, hat buchstäblich nichts zu lachen. Oder stimmt das nicht ganz? Kann Humor und Lachen im Gegenteil sogar manchmal hilfreich sein, um der Situation einen Anteil der Schwere zu nehmen und um zwischendurch einmal etwas freier zu atmen? Kann Humor auch helfen, die Stigmatisierung in Bezug auf psychiatrische Probleme etwas aufzulockern oder fördert es diese im Gegenteil? Dürfen Fachpersonen und Angehörige über schwierige Situationen lachen, vielleicht sogar zusammen mit den Betroffenen?
 
-In der psychiatrischen Behandlung wird Zwang eingesetzt um Fürsorge und Schutz zu gewährleisten. Das dies mit Mitteln der Gewalt geschieht, wird als einzige zur Verfügung stehende Möglichkeit wahrgenommen. 
+Diese und andere Fragen möchten wir am nächsten Abend des Recovery Trialog Winterthur vom 12. November 2020 aufnehmen, Start 19 Uhr.
 
-Am Recovery-Trialog vom 8. Oktober wollen wir aus der Perspektive von Angehörigen, Betroffenen und Fachpersonen folgenden Fragen nachgehen:
-
-Zwang als Mittel zu Schutz: Ist er wirklich nötig? Ginge es auch anders? Wie? Was bräuchte es dafür? Was wäre wichtig?
-
-Die Besucherzahl ist auf Grund der aktuell geltenden Schutzkonzepte immer noch eingeschränkt (16 Personen) Deshalb ist für eine sichere Teilnahme eine Anmeldung (Mail an info@auskrisenlernen.ch) erforderlich.
+Angesichts der heute absehbaren Verschärfungen der Bewegungsfreiheit aufgrund von Covid-19 wird der **Abend online über das Programm Zoom** durchgeführt. Voraussetzung ist ein eigener Computer und ein Internet-Anschluss. Um den Zugang zu der Sitzung zu erhalten, ist eine Anmeldung an info@auskrisenlernen.ch notwendig.
