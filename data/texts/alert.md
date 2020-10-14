@@ -7,4 +7,4 @@ Wer in einer psychischen Krise steckt, hat buchstäblich nichts zu lachen. Oder 
 
 Diese und andere Fragen möchten wir am nächsten Abend des Recovery Trialog Winterthur vom 12. November 2020 aufnehmen, Start 19 Uhr.
 
-Angesichts der heute absehbaren Verschärfungen der Bewegungsfreiheit aufgrund von Covid-19 wird der **Abend online über das Programm Zoom** durchgeführt. Voraussetzung ist ein eigener Computer und ein Internet-Anschluss. Um den Zugang zu der Sitzung zu erhalten, ist eine Anmeldung an info@auskrisenlernen.ch notwendig.
+Angesichts der heute absehbaren Verschärfungen der Bewegungsfreiheit aufgrund von Covid-19 wird der **Abend online über das Programm Zoom** durchgeführt. Voraussetzung ist ein eigener Computer und ein Internet-Anschluss. Um den Zugang zu der Sitzung zu erhalten, ist eine Anmeldung an info@auskrisenlernen.ch notwendig. Fragen werden auch über diese Email-Adresse oder über 079 377 42 80 beantwortet.
