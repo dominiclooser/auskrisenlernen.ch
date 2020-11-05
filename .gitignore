@@ -5,4 +5,4 @@ node_modules
 .netlifyout
 
 # Local Netlify folder
-.netlify
+.netlifyadmin

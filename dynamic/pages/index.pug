@@ -53,7 +53,7 @@ block content
             h2.h2 Termine
          .s1-main
             ul#meetings
-               for meeting in global.meetings
+               for meeting in global.meetings2020
                   - moment.locale('de')
                   time.meeting-date= moment(meeting.date).format('dd Do MMM YYYY')
                   h3.meeting-title= meeting.title  

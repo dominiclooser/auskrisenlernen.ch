@@ -13,6 +13,15 @@ collections:
          -  name: title
          -  name: body
             widget: markdown
+   -  label: Termine
+      name: meetings
+      folder: 'data/meetings'
+      create: true
+      fields:
+         -  name: date
+            widget: date
+         -  name: title
+         -  name: location         
       
    
 
