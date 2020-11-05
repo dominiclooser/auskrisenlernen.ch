@@ -23,10 +23,12 @@ collections:
       fields:
          -  name: date
             widget: date
-            date_format: 'DD.MM.YYYY'
             label: Datum
+            picker_utc: true
          -  name: title
-         -  name: location         
+            label: Titel
+         -  name: location
+            label: Location         
       
    
 
