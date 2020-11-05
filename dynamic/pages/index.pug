@@ -2,6 +2,10 @@ extends /base
 
 block content
 
+   - moment.locale('de')
+   - meetings = Object.values(global.meetings)
+   - meetings = meetings.sort( (x, y) => moment(x.date) - moment(y.date) )
+
    #page-heading
       .center-wrapper.text-wrapper
          h1#page-title Recovery Trialog Winterthur
@@ -57,10 +61,10 @@ block content
                   - moment.locale('de')
                   time.meeting-date= moment(meeting.date).format('dd Do MMM YYYY')
                   h3.meeting-main.meeting-title= meeting.title  
-               if global.meetings
-                  for meeting in global.meetings
-                     - moment.locale('de')
-                     time.meeting-date= moment(meeting.date).format('dd Do MMM YYYY')
+               if meetings
+                  for meeting in meetings
+                     
+                     time.meeting-date= moment(meeting.date).tz('Europe/Zurich').format('dd Do MMM YYYY')
                      h3.meeting-main
                         span.meeting-title= meeting.title  
                         if meeting.location
