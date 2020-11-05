@@ -14,7 +14,9 @@ collections:
          -  name: body
             widget: markdown
    -  label: Termine
+      label_singular: Termin
       name: meetings
+      
       folder: 'data/meetings'
       create: true
       fields:

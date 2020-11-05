@@ -57,6 +57,13 @@ block content
                   - moment.locale('de')
                   time.meeting-date= moment(meeting.date).format('dd Do MMM YYYY')
                   h3.meeting-title= meeting.title  
+               for meeting in global.meetings
+                  - moment.locale('de')
+                  time.meeting-date= moment(meeting.date).format('dd Do MMM YYYY')
+                  h3
+                     span.meeting-title= meeting.title  
+                     if meeting.location
+                        span.meeting-location= ', ' + meeting.location
 
       section#ablauf.s1.spaced-paragraphs
          header.s1-header
