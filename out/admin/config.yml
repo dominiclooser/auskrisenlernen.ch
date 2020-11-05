@@ -23,6 +23,8 @@ collections:
       fields:
          -  name: date
             widget: date
+            date_format: 'DD.MM.YYYY'
+            label: Datum
          -  name: title
          -  name: location         
       
