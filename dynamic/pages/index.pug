@@ -52,15 +52,15 @@ block content
          header.s1-header
             h2.h2 Termine
          .s1-main
-            ul#meetings
+            .meetings
                for meeting in global.meetings2020
                   - moment.locale('de')
                   time.meeting-date= moment(meeting.date).format('dd Do MMM YYYY')
-                  h3.meeting-title= meeting.title  
+                  h3.meeting-main.meeting-title= meeting.title  
                for meeting in global.meetings
                   - moment.locale('de')
                   time.meeting-date= moment(meeting.date).format('dd Do MMM YYYY')
-                  h3
+                  h3.meeting-main
                      span.meeting-title= meeting.title  
                      if meeting.location
                         span.meeting-location= ', ' + meeting.location

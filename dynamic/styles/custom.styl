@@ -54,14 +54,14 @@ nav
 #dates-list
     stacked-list(border: 1px solid grey)
 
-#meetings
+.meetings
     @media l
         display: grid
         grid-template-columns: max-content auto
         column-gap: var(--semi-unit)
         row-gap: var(--semi-unit)
 
-.meeting-title + .meeting-date
+.meeting-main + .meeting-date
     margin-top: var(--semi-unit)
     @media l
         margin-top: 0
@@ -73,12 +73,8 @@ nav
     @media l
         display: inline
 
-.meeting-location
-    display: inline
-
 .meeting-title
     font-weight: 500
-    display: inline
 
 #people-list
     // stacked-list(border: none, spacing: var(--quarter-unit))
