@@ -16,8 +16,6 @@ collections:
    -  label: Termine
       label_singular: Termin
       name: meetings
-      summary: '{{date}} {{title}}'
-      
       folder: 'data/meetings'
       create: true
       fields:
