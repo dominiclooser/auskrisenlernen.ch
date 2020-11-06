@@ -3,7 +3,8 @@ extends /base
 block content
 
    - moment.locale('de')
-   - meetings = Object.values(global.meetings)
+   - meetings = Object.values(global.meetings2020).concat(Object.values(global.meetings))
+   - meetings = meetings.filter(x => moment(x.date).tz('Europe/Zurich') > moment().tz('Europe/Zurich'))
    - meetings = meetings.sort( (x, y) => moment(x.date) - moment(y.date) )
 
    #page-heading
@@ -26,13 +27,6 @@ block content
          //- <a href='#ort'>Alte Kaserne Winterthur</a>
       
       section.s1.alarm.spaced-paragraphs.underlined-links!= global.texts.alert.content
-  
-      //- <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
-      //- <style type="text/css">
-      //- 	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
-      //- 	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-      //- 	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-      //- </style>
       
       section.s1.newsletter-section
          header.s1-header
@@ -57,18 +51,12 @@ block content
             h2.h2 Termine
          .s1-main
             .meetings
-               for meeting in global.meetings2020
-                  - moment.locale('de')
-                  time.meeting-date= moment(meeting.date).format('dd Do MMM YYYY')
-                  h3.meeting-main.meeting-title= meeting.title  
-               if meetings
-                  for meeting in meetings
-                     
-                     time.meeting-date= moment(meeting.date).tz('Europe/Zurich').format('dd Do MMM YYYY')
-                     h3.meeting-main
-                        span.meeting-title= meeting.title  
-                        if meeting.location
-                           span.meeting-location= ', ' + meeting.location
+              for meeting in meetings
+                  time.meeting-date= moment(meeting.date).tz('Europe/Zurich').format('dd Do MMM YYYY')
+                  h3.meeting-main
+                     span.meeting-title= meeting.title  
+                     if meeting.location
+                        span.meeting-location= ', ' + meeting.location
 
       section#ablauf.s1.spaced-paragraphs
          header.s1-header
