@@ -2,6 +2,15 @@
 // layout //
 ////////////
 
+.fullscreen
+    position: absolute
+    height: 100vh
+    height: calc(var(--vh, 1vh) * 100)
+    width: 100vw
+    z-index: 2
+    top: 0
+    left: 0
+
 .center-wrapper
     margin: 0 auto
     padding-left: var(--page-padding)
@@ -9,29 +18,35 @@
     max-width: max-page-width
 
 .fullwidth-wrapper
-    padding: 0 var(--unit)
+    padding: 0 var(--page-padding)
 
 .text-wrapper
     max-width: max-text-width
 
-grid(min-column-width = 100px, gap = var(--unit))
+grid(min-column-width = 200px, gap = var(--unit))
     display: grid
-    grid-template-columns: repeat(auto-fit, minmax(min-column-width, 1fr ))
-    grid-column-gap: gap
-    grid-row-gap: gap
+    grid-template-columns: repeat(auto-fill, minmax(min-column-width, 1fr))
+    gap: gap
+
+.grid
+    grid()
 
 .textplus
     @media textplus
         display: flex
 
 .textplus-text
+    flex-basis: 50%
     max-width: max-text-width
-    margin: var(--unit) 0 0 0
     @media textplus
-        margin: 0 var(--unit) 0 0
+        margin-right: var(--unit)
 
 .textplus-plus
+    flex-basis: 50%
+    margin-top: var(--unit)
     align-self: left
+    @media textplus
+        margin: 0
 
 .plustext
     @media textplus
@@ -45,6 +60,18 @@ grid(min-column-width = 100px, gap = var(--unit))
 
 .plustext-plus
     align-self: left
+
+.columns
+    columns: 300px
+    *
+        break-inside: avoid
+
+.image-columns
+    columns: 200px
+    column-gap: var(--semi-unit)
+    *
+        margin-bottom: var(--semi-unit)
+    
 
 
 //////////
@@ -63,34 +90,67 @@ grid(min-column-width = 100px, gap = var(--unit))
 // links //
 ///////////
 
+.rainbow
+    display: inline-block
+    position: relative
+    text-decoration: none
+    color: inherit
+    z-index: 1
+
+    &::after 
+        content: ''
+        position: absolute
+        left: 0
+        bottom: .07em
+        height: .1em
+        width: 100%
+        background: linear-gradient(110deg, #e1f549, #29d0be, #6cb8ea, #ff5959)
+        z-index: -1
+        transition: height .25s cubic-bezier(.6,0,.4,1)
+
+    &:hover::after 
+        height: .2em
+
+.rainbow-links 
+    a
+        @extends .rainbow
+
 .arrow
     &::before
         content: '\2192'
-        margin-right: 0.3em
+        margin-right: 0.15em
         display: inline-block
         
-.arrow-links a
-    @extends .arrow
+.arrow-links
+    a
+        @extends .arrow
 
-.color-links a
-    color: link-color
+.colored
+    color: var(--link-color)
+    &:hover
+        color: var(--link-color)
+
+.colored-links a
+    @extends .colored
 
 .underlined
     text-decoration: underline
 
-.underlined-links a
-    @extends .underlined
+.underlined-links 
+    a
+        @extends .underlined
 
-.underline-on-hover
+.underlined-on-hover
     &:hover
         text-decoration: underline
 
-.underline-on-hover-links a
-    @extends .underline-on-hover
+.underlined-on-hover-links 
+    a
+        @extends .underlined-on-hover
 
-.color-on-hover-links 
+.colored-on-hover-links 
     a:hover
-        color: link-color
+        color: var(--link-color)
 
 
 ///////////
@@ -98,8 +158,10 @@ grid(min-column-width = 100px, gap = var(--unit))
 ///////////
 
 .default-list
-    list-style-type: disc
-    list-style-position: inside
+    padding-left: 0.8em
+    list-style-type: '– '
+    list-style-position: outside
+
     li + li
         margin-top: var(--semi-unit)
 
@@ -110,14 +172,14 @@ grid(min-column-width = 100px, gap = var(--unit))
     li:before
         content: '\2192 \a0'        
 
-stacked-list(spacing = var(--semi-unit), border = 1px dotted dark)
+vlist(spacing=var(--semi-unit), border='1px dotted dark')
     list-style: none
     padding: 0
     li  
         padding: spacing 0 
         border-bottom: border
-        &:first-child
-            border-top: border
+        &:last-child
+            border-bottom: none
 
 hlist(sep = '', spacing-left = 0.5em, spacing-right = 0.5em)
     list-style: none
@@ -149,31 +211,25 @@ striped-list(color)
     li
         padding: var(--semi-unit)
     li:nth-child(2n+1)
+
         background-color: color
 
-default-dl(row-gap = var(--semi-unit))
+dl(row-gap=0.2em, term-width=max-content, weight=bold)
     display: grid
-    grid-template-columns: min-content auto
+    grid-template-columns: term-width auto
     grid-row-gap: row-gap
-    grid-column-gap: var(--unit)
+    grid-column-gap: 0.5em
     dt  
-        font-weight: bold
-    dd
-        ul
-            line-height: 1.5
-        li::before
-            content: '–'
-            margin-right: 0.5em
-    //     display: inline
-    //     
-    //     &::after
-    //         content: ': '
-    // dd
-    //     display: inline
-    //     &::after
-    //         content: '\A'
-    //         white-space: pre
+        font-weight: weight
 
+.dl
+    dl()
+
+.vdl
+    dt
+        font-weight: bolder
+    dt:not(:first-child)
+        margin-top: var(--semi-unit)
 
 //////////
 // misc //
@@ -190,4 +246,5 @@ default-dl(row-gap = var(--semi-unit))
         left: 0
         width: 100%
         height: 100%
+
 

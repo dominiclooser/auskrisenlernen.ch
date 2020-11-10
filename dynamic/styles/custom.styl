@@ -2,7 +2,7 @@
 .alarm
     border: 2px solid currentColor
     padding: var(--semi-unit)
-    color: primary
+    color: dark
     hyphens: auto
     .map
         margin-top: var(--unit)
@@ -44,7 +44,7 @@ nav
             
 
 #news
-    border: 2px solid #56e39f
+    border: 2px solid dark
     padding: var(--semi-unit)
     
 #intro
@@ -78,7 +78,8 @@ nav
 
 #people-list
     // stacked-list(border: none, spacing: var(--quarter-unit))
-    striped-list(color: lighten(primary, 70%))
+    // striped-list(color: lighten(primary, 70%))
+    vlist(spacing: 0.3em)
     line-height: 1.3
 
 .logos

@@ -9,8 +9,8 @@ block content
 
    #page-heading
       .center-wrapper.text-wrapper
-         h1#page-title Recovery Trialog Winterthur
-            #page-subtitle Aus Krisen Lernen
+         h1#page-title Recovery<br>Trialog<br>Winterthur
+         //- #page-subtitle Aus Krisen Lernen
 
    main#page-main.center-wrapper.text-wrapper
       nav
@@ -18,12 +18,8 @@ block content
             for entry in global.nav
                li: a(href=entry.link)= entry.title
 
-      section#intro.s1.spaced-paragraphs.underlined-links
-         p Im <em>Recovery Trialog Winterthur</em> tauschen sich Angehörige, Krisenerfahrene und Fachpersonen gleichberechtigt darüber aus, wie Genesung (Recovery) auch in einem Leben mit psychischen Erschütterungen gelingen kann.
-         p. 
-            Jeder 2. Donnerstag des Monats <br>   
-            <time>19–21&nbsp;Uhr</time> • ORT: siehe Box untenstehend
-
+      section#intro.s1.spaced-paragraphs.underlined-links!= global.texts.intro.content
+         
          //- <a href='#ort'>Alte Kaserne Winterthur</a>
       
       section.s1.alarm.spaced-paragraphs.underlined-links!= global.texts.alert.content
