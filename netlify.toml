@@ -1,3 +1,4 @@
-[context.v1]
+[build]
+   publish = 'out'
    command = ''
    
