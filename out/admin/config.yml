@@ -28,7 +28,8 @@ collections:
          -  name: title
             label: Titel
          -  name: location
-            label: Location    
+            label: Location  
+            required: false  
    
    -  name: locations
       label: Orte
@@ -41,11 +42,10 @@ collections:
             label: Name
          -  name: address_line_1
             label: Adress-Linie 1
+            required: false
          -  name: address_line_2
             label: Adress-Linie 2
-         -  name: coordinates
-            label: Koordinaten
-            widget: map
+            required: false
 
    -  name: team
       label: Team
@@ -58,10 +58,13 @@ collections:
             label: Name
          -  name: description
             label: Beschreibung
+            required: false
          -  name: company
             label: Firma
+            required: false
          -  name: link
             label: Link
+            required: false
          
       
       
