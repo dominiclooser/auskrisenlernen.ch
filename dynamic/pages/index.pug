@@ -18,11 +18,11 @@ block content
             for entry in global.nav
                li: a(href=entry.link)= entry.title
 
-      section#intro.s1.spaced-paragraphs.underlined-links!= global.texts.intro.content
-         
-         //- <a href='#ort'>Alte Kaserne Winterthur</a>
       
-      section.s1.alarm.spaced-paragraphs.underlined-links!= global.texts.alert.content
+      section#intro.s1.spaced-paragraphs.underlined-links!= global.texts.intro.content
+      
+      if global.texts.alert.content.trim()
+         section.s1.alarm.spaced-paragraphs.underlined-links!= global.texts.alert.content
       
       section.s1.newsletter-section
          header.s1-header
