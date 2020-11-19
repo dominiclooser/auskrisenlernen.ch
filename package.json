@@ -18,6 +18,7 @@
     "time-grunt": "latest"
   },
   "dependencies": {
+    "coffeescript": "^2.5.1",
     "glob": "^7.1.4",
     "gray-matter": "^4.0.2",
     "grunt-contrib-coffee": "^2.1.0",
