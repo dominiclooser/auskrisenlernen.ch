@@ -5,17 +5,19 @@ backend:
 media_folder: uploads
 
 collections:
-   -  label: Texte
-      name: texts
+
+   -  name: texts
+      label: Texte
       folder: 'data/texts'
       delete: false
       fields:
          -  name: title
          -  name: body
             widget: markdown
-   -  label: Termine
+
+   -  name: meetings
+      label: Termine
       label_singular: Termin
-      name: meetings
       folder: 'data/meetings'
       create: true
       fields:
@@ -26,7 +28,21 @@ collections:
          -  name: title
             label: Titel
          -  name: location
-            label: Location         
+            label: Location    
+   
+   -  name: team
+      label: Team
+      label_singular: Team Member
+      folder: 'data/team' 
+      create: true
+      extension: 'yml'
+      fields:
+         -  name: name
+         -  name: description
+         -  name: company
+         -  name: link
+         
+      
       
    
 

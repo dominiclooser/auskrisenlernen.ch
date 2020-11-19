@@ -1,34 +1,35 @@
--  name: Nathalie Althaus
-   description: Expertin aus Erfahrung
+people: 
+   -  name: Nathalie Althaus
+      description: Expertin aus Erfahrung
 
--  name: Thomas Herzog
-   description: Co-Leiter Arbeit & Integration
-   company: Quellenhof Stiftung
+   -  name: Thomas Herzog
+      description: Co-Leiter Arbeit & Integration
+      company: Quellenhof Stiftung
 
--  name: Renate Münch
-   description: Gruppenleiterin
-   company: Hardoskop
+   -  name: Renate Münch
+      description: Gruppenleiterin
+      company: Hardoskop
 
--  name: Sandra Guyer
-   description: Kunsttherapeutin
+   -  name: Sandra Guyer
+      description: Kunsttherapeutin
 
--  name: Uwe Bening
-   description: Fachverantwortung Recovery
-   company: pro mente sana
+   -  name: Uwe Bening
+      description: Fachverantwortung Recovery
+      company: pro mente sana
 
--  name: Stefan Luzi
-   description: Pflegefachmann
-   company: GEPS Winterthur
+   -  name: Stefan Luzi
+      description: Pflegefachmann
+      company: GEPS Winterthur
 
--  name: Gabriela Paganini
-   description: Sozialpädagogin FH
+   -  name: Gabriela Paganini
+      description: Sozialpädagogin FH
 
--  name: Lukas Huppenbauer
-   description: Experte aus Erfahrung
+   -  name: Lukas Huppenbauer
+      description: Experte aus Erfahrung
 
--  name: Dominic Looser
-   link: https://dominiclooser.ch
-   description: Webseite
+   -  name: Dominic Looser
+      link: https://dominiclooser.ch
+      description: Webseite
 
 
 

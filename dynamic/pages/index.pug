@@ -70,7 +70,7 @@ block content
             h2.h2 Team
          .s1-main
             ul#people-list.underlined-links
-               for person in global.team
+               for person in global.team.people
                   li
                      if person.link
                         a(href=person.link): strong= person.name
