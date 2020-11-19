@@ -1,3 +1,6 @@
+---
+title: Ablauf
+---
 Die Treffen finden jeweils von **<time>19-21 Uhr</time>** statt, mit einer 20-minütigen Pause.
          
 Eingeladen sind Menschen mit der Erfahrung psychischer Erschütterung, 
