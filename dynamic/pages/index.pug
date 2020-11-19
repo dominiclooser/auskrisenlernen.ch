@@ -108,11 +108,16 @@ block content
                <a href='mailto:info@auskrisenlernen.ch'>info@auskrisenlernen.ch</a>
                 oder <span class='nobr'>079 377 42 80</span>
 
-   footer.page-footer
-      .center-wrapper.text-wrapper
-         header.s1-header
-            h3.h3 Unterstützt von
-         main.s1-main.logos
+
+   footer.page-footer.fullwidth-wrapper
+      .logos
+         for name in fs.readdirSync('static/images/logos')
+            img(src='/images/logos/' + name)
+      //- //- .center-wrapper.text-wrapper
+      //- //-    header.s1-header
+      //- //-       h3.h3 Unterstützt von
+      //- .fullwidth-wrapper
+      //-    main.s1-main.logos
             for name in fs.readdirSync('static/images/logos')
                img(src='/images/logos/' + name)
 
