@@ -30,6 +30,23 @@ collections:
          -  name: location
             label: Location    
    
+   -  name: locations
+      label: Orte
+      label_singular: Ort
+      folder: 'data/locations' 
+      create: true
+      extension: 'yml'
+      fields:
+         -  name: name
+            label: Name
+         -  name: address_line_1
+            label: Adress-Linie 1
+         -  name: address_line_2
+            label: Adress-Linie 2
+         -  name: coordinates
+            label: Koordinaten
+            widget: map
+
    -  name: team
       label: Team
       label_singular: Team Member
@@ -38,9 +55,13 @@ collections:
       extension: 'yml'
       fields:
          -  name: name
+            label: Name
          -  name: description
+            label: Beschreibung
          -  name: company
+            label: Firma
          -  name: link
+            label: Link
          
       
       
