@@ -18,16 +18,7 @@ nav
         li
             padding: 0 var(--semi-unit) 
 
-#main-image
-    max-height: 50vh
-
-#attention
-    border: 2px solid #ef6f6c
-    padding: var(--semi-unit)
-
 .newsletter-section
-    // #mc_embed_signup_scroll
-    //     display: flex
     input[type='email']
         width: 66%
         border: 1px solid grey
@@ -41,44 +32,27 @@ nav
         cursor: pointer
         &:hover
             text-decoration: underline
-            
-
-#news
-    border: 2px solid dark
-    padding: var(--semi-unit)
-    
+                
 #intro
     font-size: var(--l)
     line-height: 1.3
 
-#dates-list
-    stacked-list(border: 1px solid grey)
+.meetings
+    vlist()
 
-// .meetings
-//     @media l
-//         display: grid
-//         grid-template-columns: max-content auto
-//         column-gap: var(--semi-unit)
-//         row-gap: var(--semi-unit)
-
-.meeting-main + .meeting-date
-    margin-top: var(--semi-unit)
-    // @media l
-    //     margin-top: 0
-
-.meeting-date
-    display: block
-    color: hsl(0, 0, 30)
-    flex-shrink: 0
-    // @media l
-    //     display: inline
+.meeting-time
+    &::before
+        content: ' • '
 
 .meeting-title
+    font-size: var(--l)
     font-weight: 500
+    line-height: 1.2
+
+.locations
+    grid(gap: var(--semi-unit))
 
 #people-list
-    // stacked-list(border: none, spacing: var(--quarter-unit))
-    // striped-list(color: lighten(primary, 70%))
     vlist(spacing: 0.3em)
     line-height: 1.3
 

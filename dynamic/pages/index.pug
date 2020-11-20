@@ -42,13 +42,19 @@ block content
          header.s1-header
             h2.h2 Termine
          .s1-main
-            .meetings
+            ul.meetings
               for meeting in meetings
-                  time.meeting-date= moment(meeting.date).tz('Europe/Zurich').format('dd Do MMM YYYY')
-                  h3.meeting-main
-                     span.meeting-title= meeting.title  
+                  li.meeting
+                     header.meeting-header
+                        time.meeting-date= moment(meeting.date).tz('Europe/Zurich').format('dd Do MMM YYYY')
+                        time.meeting-time
+                           if meeting.time
+                              = meeting.time
+                           else
+                              span 19:00–21:00
+                     h3.meeting-title= meeting.title  
                      if meeting.location
-                        span.meeting-location= ', ' + meeting.location
+                        .meeting-location= meeting.location
 
       section#ablauf.s1.spaced-paragraphs
          header.s1-header
@@ -59,18 +65,15 @@ block content
          header.s1-header
             h2.h2 Orte
          .s1-main
-            for location in global.locations
-               address
-                  strong= location.name
-                  br
-                  span= location.address_line_1
-                  if location.address_line_2
+            .locations
+               for location in global.locations
+                  address.location
+                     strong= location.name
                      br
-                     span= location.address_line_2
-            //- address.
-            //-    <strong>Alte Kaserne</strong> <br>
-            //-    Technikumstrasse 8 <br>
-            //-    8400 Winterthur
+                     span= location.address_line_1
+                     if location.address_line_2
+                        br
+                        span= location.address_line_2
             //- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2695.5900367050695!2d8.729273915507536!3d47.4978993034741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479a999cf56459dd%3A0x824337f4a4dddc51!2sAlte%20Kaserne!5e0!3m2!1sde!2sch!4v1574710433337!5m2!1sde!2sch" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 
       section#team.s1
@@ -99,10 +102,8 @@ block content
       section#kontakt.s1
          header.s1-header
             h2.h2 Kontakt
-         .s1-main
-            p. 
-               <a href='mailto:info@auskrisenlernen.ch'>info@auskrisenlernen.ch</a>
-                oder <span class='nobr'>079 377 42 80</span>
+         .s1-main!= global.texts.contact.content
+            
 
    footer.page-footer
       .center-wrapper.text-wrapper
