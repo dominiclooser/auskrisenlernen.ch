@@ -25,6 +25,9 @@ collections:
             widget: date
             label: Datum
             picker_utc: true
+         -  name: time
+            label: Zeit
+            required: false
          -  name: title
             label: Titel
          -  name: location

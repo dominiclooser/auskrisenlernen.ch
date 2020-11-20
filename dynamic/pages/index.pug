@@ -57,20 +57,28 @@ block content
             
       section#ort.s1
          header.s1-header
-            h2.h2 Ort
+            h2.h2 Orte
          .s1-main
-            address.
-               <strong>Alte Kaserne</strong> <br>
-               Technikumstrasse 8 <br>
-               8400 Winterthur
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2695.5900367050695!2d8.729273915507536!3d47.4978993034741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479a999cf56459dd%3A0x824337f4a4dddc51!2sAlte%20Kaserne!5e0!3m2!1sde!2sch!4v1574710433337!5m2!1sde!2sch" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            for location in global.locations
+               address
+                  strong= location.name
+                  br
+                  span= location.address_line_1
+                  if location.address_line_2
+                     br
+                     span= location.address_line_2
+            //- address.
+            //-    <strong>Alte Kaserne</strong> <br>
+            //-    Technikumstrasse 8 <br>
+            //-    8400 Winterthur
+            //- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2695.5900367050695!2d8.729273915507536!3d47.4978993034741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479a999cf56459dd%3A0x824337f4a4dddc51!2sAlte%20Kaserne!5e0!3m2!1sde!2sch!4v1574710433337!5m2!1sde!2sch" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 
       section#team.s1
          header.s1-header
             h2.h2 Team
          .s1-main
             ul#people-list.underlined-links
-               for person in global.team.people
+               for person in global.team
                   li
                      if person.link
                         a(href=person.link): strong= person.name
