@@ -68,6 +68,20 @@ collections:
          -  name: link
             label: Link
             required: false
+
+   -  name: download
+      label: Download
+      folder: 'data/download'
+      create: true
+      extension: 'yml'
+      fields: 
+         -  name: title
+            label: Titel
+         -  name: file
+            label: Datei
+            widget: file
+
+
          
       
       
