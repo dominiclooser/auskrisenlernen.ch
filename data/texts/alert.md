@@ -1,7 +1,7 @@
 ---
 title: zum nächsten Abend...
 ---
-**zum nächsten Abend: Psychiatrie der Zukunft - unsere Forderungen!**
+zum nächsten Abend: **Psychiatrie der Zukunft - unsere Forderungen!**
 
 Der Trialog-Abend findet statt am Donnerstag, 10. Dezember 2020, 19-21 Uhr in der Alten Kaserne Winterthur, Technikumstrasse 8, 8400 Winterthur.
 
