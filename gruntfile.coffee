@@ -30,7 +30,11 @@ getData = (dataPath) ->
     name = parse(dataPath).base
     id = replaceExt(name, '')
     suffix = parse(dataPath).ext
-    content = fs.readFileSync(dataPath, 'utf8')
+    try
+        content = fs.readFileSync(dataPath, 'utf8')
+    catch error
+        console.log('could not read ' + dataPath)
+        throw error
     data = {}
 
     if suffix == '.md'
@@ -58,7 +62,7 @@ getDataObject = (dir) ->
     data = {}
     
     for name in fs.readdirSync(dir)
-        if name == 'drafts'
+        if name.startsWith('_')
             continue
         dataPath = join(dir, name)
         id = replaceExt(name, '')
@@ -137,7 +141,7 @@ config =
     
     postcss:
         options:
-            processors: [autoprefixer, cssVariables, calc]
+            processors: [autoprefixer]
         main:
             src: 'out/styles/styles.css'
     
@@ -264,13 +268,12 @@ module.exports = (grunt) ->
             if fs.existsSync(filename)
                 return fs.readFileSync(filename)
             else
-                return ''
-            # catch e
-            #     console.log('ERROR')
-            #     return ''
-                # if ex.code != 'ENOENT'
-                #     throw ex
-                # return Buffer.alloc(0)        
+                return ''    
+
+        wikidata = {} # todo
+
+        marked.setOptions
+            smartypants: true
 
         globalOptions =
             basedir: 'dynamic/shared'
@@ -282,6 +285,7 @@ module.exports = (grunt) ->
             marked: marked
             toWidth: toWidth
             plugins: [{read: read}]
+            wikidata: wikidata
     
             
        
@@ -311,7 +315,8 @@ module.exports = (grunt) ->
                 dataGlob = generator.data
 
                 for dataPath in glob.sync(join(DATA_DIR, dataGlob))
-                         
+                    if parse(dataPath).name.startsWith('_')
+                        continue
                     local = {}
                     _.merge(local, getData(dataPath), templateData)
                     locals = 
@@ -337,6 +342,8 @@ module.exports = (grunt) ->
                     console.log("done. Generated #{targetFile}")
                
         for pagePath in glob.sync('dynamic/pages/**/*.pug')
+            if parse(pagePath).name.startsWith('_')
+                continue
             relativePath = path.relative(PAGES_PATH, pagePath)
             urlPath = replaceExt(relativePath, '')
 
@@ -365,7 +372,7 @@ module.exports = (grunt) ->
             fs.writeFileSync(target, html)
             
 
-    grunt.registerTask 'build', ['pug', 'stylus', 'postcss', 'coffee', 'copy:static', 'strip-extensions']
+    grunt.registerTask 'build', ['make-dirs', 'pug', 'stylus', 'postcss', 'coffee', 'copy:static', 'strip-extensions']
     grunt.registerTask 'default', ['build', 'watch']
     
     grunt.registerTask 'full_build', ['clean', 'make-dirs', 'imagemin', 'responsive_images', 'build'] 
