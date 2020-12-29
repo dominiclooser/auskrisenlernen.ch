@@ -1,12 +1,14 @@
 ---
 title: zum nächsten Abend...
 ---
-zum nächsten Abend: **Psychiatrie der Zukunft - unsere Forderungen!**
+zum nächsten Abend: **Halt und Vertrauen in unsicheren Zeiten**
 
-Der Trialog-Abend findet statt am Donnerstag, 10. Dezember 2020, 19-21 Uhr in der Alten Kaserne Winterthur, Technikumstrasse 8, 8400 Winterthur.
+Hinter uns liegt ein ereignisreiches Jahr: Die Klimaerwärmung wurde als dominierendes Thema von der Covid-Pandemie abgelöst, hat aber an Dringlichkeit nichts verloren; die Folgen der Massnahmen zur Eindämmung des Virus sind noch kaum absehbar. Daneben erschütterten politische Ereignisse wie die Wahlen in den USA und der Abschied Grossbritanniens aus der EU die Weltöffentlichkeit.
 
-Die Teilnehmerzahl ist aufgrund der aktuellen Massnahmen im Zusammenhang mit Covid-19 auf 16 Personen beschränkt. Zudem besteht eine Maskenpflicht. 
+Wie gewinnen wir als Gemeinschaft, aber auch als Individuen – sei es als Krisenerfahrene, Angehörige oder Fachpersonen –  vor diesem Hintergrund Halt und Sicherheit zurück? Worauf können wir ein Vertrauen gründen, dass wir gewappnet sind, die Herausforderungen bestehen zu können? Und was ist - je nach Perspektive - unsere Aufgabe oder Rolle?
 
-Anmeldung notwendig auf info@recovery-trialog.ch oder 079 377 42 80.
+Leitung: Dr. Herbert Assaloni und Stefan Luzi
+
+Das Treffen vom Donnerstag, 14. Januar 2021 wird online über *Zoom* stattfinden. Um einen Zugang für das Treffen zu erhalten, ist eine Anmeldung notwendig auf info@recovery-trialog.ch oder 079 377 42 80. Das Treffen beginnt um 19 Uhr und dauert ca. 90 Minuten.
 
 Wir freuen uns auf deine Teilnahme!
