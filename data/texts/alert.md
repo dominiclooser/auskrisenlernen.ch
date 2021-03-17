@@ -1,12 +1,18 @@
 ---
 title: zum nächsten Abend...
 ---
-zum nächsten Abend: **Familie - Wege aus der Sprachlosigkeit**
+**Entschuldigung und Ausblick Recovery Trialog April 2021**\
+\
+Liebe Interessierte des Recovery Trialog Winterthur,\
+\
+Im Namen der Kerngruppe möchte ich mich dafür entschuldigen, dass der für den 11. März 2021 geplante Trialog zum Thema "Familie - Wege aus der Sprachlosigkeit" aus gesundheitlichen Gründen nicht wie geplant stattfinden konnte. Ebenso dafür, dass nicht alle Mails an uns rechtzeitig beantwortet werden konnten.\
+\
+Wir bitten um Verständnis und werden uns bemühen, den Abend zu einem späteren Zeitpunkt nachzuholen, da das Thema offenbar auf Interesse gestossen wäre. Zum Beispiel haben wir im Oktober ja noch ein "offenes Modul" mit einem noch zu bestimmenden Thema.\
+\
+Wir hoffen, die nächsten Abende wieder wie geplant durchführen zu können. **Am 8. April möchten wir uns unter dem Thema "Krise kreativ!" mit der Frage auseinandersetzen**, was Kreativität eigentlich bedeutet, ob sie in der Krise möglich ist und ob sie sogar eine heilende Wirkung haben kann. Wir freuen uns bereits sehr auf diesen Abend!\
+\
+Ob der Abend wieder auf ZOOM stattfinden wird, oder evt. doch wieder ein Treffen vor Ort möglich ist, werden wir nach Bekanntgabe der neuen Covid-Bestimmungen am 22.3. entscheiden und euch darüber nochmals per Newsletter und auf der Homepage informieren.\
+\
+Mit herzlichem Gruss,
 
-Nicht selten erleben wir, wie Familien angesichts der seelischen Erschütterung eines Mitgliedes keine Sprache finden, um darüber zu reden. Sprachloses Verstummen kann die Last für alle noch grösser machen. Am Video-Trialog vom 11.03.2021 wollen wir als Moderationsteam uns mit den Teilnehmenden über Ihre Erfahrungen zu Wegen aus der Sprachlosigkeit austauschen. Das Moderationsteam für diesen Abend besteht aus Angela Winkler (EX-IN Angehörigenbegleiterin), Helene Brändli (EX-IN Genesungsbegleiterin) und Jens Beckmann ( Facharzt für Psychiatrie und Psychotherapie).
-
-Das Treffen vom Donnerstag, 11. März 2021 wird online über *Zoom* stattfinden. Einen Link zur Teilnahme haben die AbonenntInnen des Newsletters bereits erhalten. Du nicht? Dann erhältst du den Link per Mail an:
-
-[helene.braendli@trialog-antistigma.ch](mailto:helene.braendli@trialog-antistigma.ch)
-
-Wir freuen uns auf deine Teilnahme!
+Stefan Luzi
