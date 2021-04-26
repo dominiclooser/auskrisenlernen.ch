@@ -1,23 +1,16 @@
 ---
 title: zum nächsten Abend...
 ---
-**Recovery Trialog 8. April 2021, 19-20.30 Uhr**
+**Recovery Trialog 6. Mai 2021, 19-21 Uhr**
 
-\
-**Krise kreativ!**
+"Gewalt - Macht und Ohnmacht" wurden und werden in der Psychiatrie erlebt. 
 
-Im Trialog vom 8. April wollen wir uns über das Verhältnis von Krise und Kreativität austauschen.
+Von Nutzenden, Angehörigen und Mitarbeitenden. 
 
-Uns interessieren folgende Fragen:
+Die Einen erleiden sie, die Anderen üben sie aus. 
 
-\- Was ist das eigentlich, «Kreativität»?
+Oder leiden alle - gleichwohl anders? 
 
-\- Wie zeigt sich Kreativität in deinem persönlichen Alltag?
+Wir wollen Sie zum Erfahrungsaustausch und zur Suche nach Wegen zu weniger Gewalt einladen. 
 
-\- Welche Voraussetzungen wirken unterstützend für kreatives Handeln?
-
-\- Inwiefern kann Kreativität helfen, mit aussergewöhnlichen Lebenssituationen umzugehen?
-
-\- Und wie steht es mit der Behauptung, dass Krisen kreatives Handeln sogar begünstigen können?
-
-Der Trialog findet online über Zoom statt. Wer sich im Newsletter eingetragen hat, hat den Link bereits erhalten. Ansonsten kann er über info@recovery-trialog.ch angefordert werden.
+Wir freuen uns, dass wir den Trialog wieder einmal vor Ort in der **Alten Kaserne Winterthur,** Technikumstrasse 8, durchführen können. Eine Maske ist Pflicht. Da die Teilnehmenzahl auf 15 begrenzt ist, ist eine **Anmeldung auf info@recovery-trialog.ch notwendig.**
