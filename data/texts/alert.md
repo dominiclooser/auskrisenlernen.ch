@@ -1,16 +1,16 @@
 ---
 title: zum nächsten Abend...
 ---
-**Recovery Trialog 6. Mai 2021, 19-21 Uhr**
+**Recovery Trialog Donnerstag, 10. Juni 2021 (17.30-19.30 Uhr)** 
 
-"Gewalt - Macht und Ohnmacht" wurden und werden in der Psychiatrie erlebt. 
+**Benzos? Benzos! Benzos?**
 
-Von Nutzenden, Angehörigen und Mitarbeitenden. 
+Kaum eine Medikamentengruppe ist in der Psychiatrie derart umstritten wie die Gruppe der Benzodiazepine. Einer hohen Wirksamkeit steht die ernstzunehmende Gefahr einer Abhängigkeit gegenüber. Es gibt auch Stimmen, die argumentieren, dass mit der Einnahme von Temesta und Co. wichtige Entwicklungsschritte unterdrückt werden oder das Erlernen von alternativen Bewältigungsstrategien erschwert wird. 
 
-Die Einen erleiden sie, die Anderen üben sie aus. 
 
-Oder leiden alle - gleichwohl anders? 
+Doch wie erleben Krisenerfahrene und Fachpersonen den Einsatz dieser Medikamente wirklich in der Praxis? Was sind die diesbezüglichen Fragen und Sorgen der Angehörigen? 
+Diesen Fragen wollen wir an diesem Trialog-Abend nachgehen, nicht aus einer fachlichen Sicht, sondern aus einer Perspektive der persönlichen Erfahrung in den unterschiedlichen Rollen.
 
-Wir wollen Sie zum Erfahrungsaustausch und zur Suche nach Wegen zu weniger Gewalt einladen. 
+Der Abend findet, sofern die Covid-Situation dies zulässt, erstmals statt in der IPW, Klinik Schlosstal, Wieshofstrasse 102, Grosser Saal. Genaueres dazu ab dem 20. Mai auf dieser Homepage.
 
-Wir freuen uns, dass wir den Trialog wieder einmal vor Ort in der **Alten Kaserne Winterthur,** Technikumstrasse 8, durchführen können. Eine Maske ist Pflicht. Da die Teilnehmenzahl auf 15 begrenzt ist, ist eine **Anmeldung auf info@recovery-trialog.ch notwendig.**
+*Bitte beachten, dass der Trialog bereits um 17.30 Uhr beginnt.*
