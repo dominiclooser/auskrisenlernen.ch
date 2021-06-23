@@ -3,7 +3,7 @@ title: zum nächsten Abend...
 ---
 **Recovery Trialog Donnerstag, 8. Juli 2021 19-21 Uhr**
 
-**Sebstfürsorge für Angehörige und Fachpersonen**
+**Selbstfürsorge für Angehörige und Fachpersonen**
 
 Selbstfürsorge meint, aktiv für das eigene physische und psychische Wohlbefinden zu sorgen. *(Selbstfürsorglich mit sich selber umzugehen kann z.B. bedeuten, Aktivitäten und Handlungen auszuführen, welche mir guttun. Es kann aber auch bedeuten, auf Aktivitäten und Handlungen zu verzichten, welche mir nicht guttun.)*
 
