@@ -1,19 +1,29 @@
 ---
 title: zum nächsten Abend...
 ---
-**Recovery Trialog Donnerstag, 10. Juni 2021 (17.30-19.30 Uhr)** 
+**Recovery Trialog Donnerstag, 8. Juli 2021 19-21 Uhr**
 
-**Benzos? Benzos! Benzos?**
+**Sebstfürsorge für Angehörige und Fachpersonen**
 
-Kaum eine Medikamentengruppe ist in der Psychiatrie derart umstritten wie die Gruppe der Benzodiazepine. Einer hohen Wirksamkeit steht die ernstzunehmende Gefahr einer Abhängigkeit gegenüber. Es gibt auch Stimmen, die argumentieren, dass mit der Einnahme von Temesta und Co. wichtige Entwicklungsschritte unterdrückt werden oder das Erlernen von alternativen Bewältigungsstrategien erschwert wird. 
+Selbstfürsorge meint, aktiv für das eigene physische und psychische Wohlbefinden zu sorgen. *(Selbstfürsorglich mit sich selber umzugehen kann z.B. bedeuten, Aktivitäten und Handlungen auszuführen, welche mir guttun. Es kann aber auch bedeuten, auf Aktivitäten und Handlungen zu verzichten, welche mir nicht guttun.)*
 
-Doch wie erleben Krisenerfahrene und Fachpersonen den Einsatz dieser Medikamente wirklich in der Praxis? Was sind die diesbezüglichen Fragen und Sorgen der Angehörigen? 
-Diesen Fragen wollen wir an diesem Trialog-Abend nachgehen, nicht aus einer fachlichen Sicht, sondern aus einer Perspektive der persönlichen Erfahrung in den unterschiedlichen Rollen.
+Als Fachpersonen im Psychiatriekontext sollen wir einerseits Selbstfürsorge vermitteln. Andererseits fällt es uns aufgrund von persönlichen Prägungen und institutionellen Gegebenheiten (z.B. chronische Unterbesetzung) oft schwer uns ohne Schuldgefühle abzugrenzen und selbstfürsorglich mit unseren Ressourcen umzugehen.
+
+Als Angehörige sind wir besonders gefordert: Wir versuchen unser Bestmögliches zu tun, um das betroffene Familienmitglied im Krankheit- und Genesungsprozess zu unterstützen. Gleichzeitig sollen wir im Job funktionieren, die gesamte Haushalts- & Familienarbeit bewältigen und den Kindern grösstmögliche «Normalität» gewährleisten.
+
+Wo bleibt da Platz für Selbstfürsorge?
+
+Was meint die Sichtweise der Betroffenen dazu?
+
+Was können wir voneinander lernen?
+
+Mit diesen und weiteren Fragen wollen wir uns am Trialog vom 8. Juli beschäftigen.
+
+Wir freuen uns auf rege Teilnahme!
 
 **Anmeldung notwendig:** Eine Anmeldung ist aufgrund des eingeschränkten Platzangebots vor Ort notwendig.  Bitte per Mail an: info@recovery-trialog.ch oder per Tel/ SMS an 079’ 377 42 80.\
 \
-**Ort:** Der Trialog findet statt im Grossen Saal (Parterre) der Klinik Schlosstal, ipw, Wieshofstrasse 102, Winterthur.\
+**Ort:** Der Trialog findet statt im Raum Seminar, in der Alten Kaserne Winterthur.
+
 \
 **Covid:** bitte beachtet, dass vor Ort weiterhin eine Maskenpflicht gilt.
-
-*Bitte beachten, dass der Trialog bereits um 17.30 Uhr beginnt.*
